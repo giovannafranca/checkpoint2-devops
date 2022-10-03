@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" th:href="@{~/css/global.css}">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Epic Task</h1>
+
+    <form action="/task/new" method="POST">
+        <label for="title">Título</label>
+        <input placeholder="título" type="text" name="title" id="title">
+        
+        <label for="description">Descrição</label>
+        <textarea type="text" name="description" id="description">descrição</textarea>
+
+        <label for="score">pontos</label>
+        <input type="range" name="score" id="score" min="1" max="100">
+
+        <button>cancelar</button>
+        <input type="submit" value="cadastrar" class="button" />
+
+    </form>
+    
+</body>
+</html>
