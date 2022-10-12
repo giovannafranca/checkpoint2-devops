@@ -1,0 +1,9 @@
+drop table task;
+
+create table task (
+  id number primary key,
+  title varchar2(255) not null,
+  description varchar2(255) not null,
+  score number(10) not null
+  status number(10) not null
+);
